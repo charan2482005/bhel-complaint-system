@@ -88,8 +88,8 @@ const getAllEnquiries = async (req, res) => {
     const result = await db.query(
   `
   SELECT *
-  FROM hpvp_enquiries
-  ORDER BY hpvp_enq_date DESC NULLS LAST
+FROM hpvp_enquiries
+ORDER BY enquiry_date DESC NULLS LAST
   `
 );
 
